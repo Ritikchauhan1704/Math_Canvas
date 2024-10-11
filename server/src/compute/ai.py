@@ -35,7 +35,6 @@ def analyze_image(img:Image,dict_of_vars:dict):
         f"PROPERLY QUOTE THE KEYS AND VALUES IN THE DICTIONARY FOR EASIER PARSING WITH Python's ast.literal_eval."
     )
     response = model.generate_content([prompt, img])
-    # print(1)
     # print(response.text)
     answers = []
     try:

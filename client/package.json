@@ -13,15 +13,18 @@
     "@types/react-color": "^3.0.12",
     "axios": "^1.7.7",
     "better-react-mathjax": "^2.0.3",
-    "mathjax": "^3.2.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-draggable": "^4.4.6"
+    "react-draggable": "^4.4.6",
+    "react-katex": "^3.0.1",
+    "react-latex": "^2.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.1",
     "@types/react": "^18.3.10",
     "@types/react-dom": "^18.3.0",
+    "@types/react-katex": "^3.0.4",
+    "@types/react-latex": "^2.0.3",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.11.1",
