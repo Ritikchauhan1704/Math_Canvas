@@ -67,13 +67,15 @@ GOOGLE_API_KEY=your_gemini_api_key
 
 ## 📁 Project Structure
 ```
-/frontend     - React app with canvas, controls, and LaTeX display
-/backend      - FastAPI server with Gemini 2.0 Flash logic
+/client     - React app with canvas, controls, and LaTeX display
+/server      - FastAPI server with Gemini 2.0 Flash logic
 ```
 
 ---
 
 ## 📸 Examples
+
+Press Run after drawing
 
 ### Basic Arithmetic
 **Input (Handwritten):**
@@ -109,17 +111,17 @@ GOOGLE_API_KEY=your_gemini_api_key
 1. Clone the repository
 2. Set up the backend:
    ```bash
-   cd backend
+   cd server
    pip install -r requirements.txt
    # Add your GOOGLE_API_KEY to .env
    uvicorn main:app --reload
    ```
 3. Set up the frontend:
    ```bash
-   cd frontend
-   npm install
+   cd client
+   bun install
    # Add VITE_SERVER_URL to .env
-   npm run dev
+   bun run dev
    ```
 4. Open your browser and start drawing equations!
 
