@@ -1,13 +1,11 @@
 # 🧮 MathCanvas - Handwritten Math Equation Solver
-
-MathCanvas is a web app that lets you draw math equations on a canvas, processes them using a FastAPI backend powered by Gemini 1.5 Flash, and displays the computed result using LaTeX rendering.
+MathCanvas is a web app that lets you draw math equations on a canvas, processes them using a FastAPI backend powered by Gemini 2.0 Flash, and displays the computed result using LaTeX rendering.
 
 ---
 
 ## ✨ Features
-
 - 🎨 Draw equations with multiple colors
-- 🧠 Uses Gemini 1.5 Flash to interpret handwritten equations
+- 🧠 Uses Gemini 2.0 Flash to interpret handwritten equations
 - 🧮 Supports variable assignment and expression evaluation
 - 📐 Smart placement of results over canvas
 - 🖱️ Draggable LaTeX output
@@ -16,7 +14,6 @@ MathCanvas is a web app that lets you draw math equations on a canvas, processes
 ---
 
 ## 🖼️ Frontend
-
 ### Tech Stack:
 - React + TypeScript
 - TailwindCSS
@@ -39,10 +36,9 @@ VITE_SERVER_URL=http://localhost:8000
 ---
 
 ## ⚙️ Backend
-
 ### Tech Stack:
 - FastAPI
-- Gemini 1.5 Flash (via Google Generative AI API)
+- Gemini 2.0 Flash (via Google Generative AI API)
 - PIL (for image processing)
 - Pydantic v2
 
@@ -61,7 +57,6 @@ GOOGLE_API_KEY=your_gemini_api_key
 ---
 
 ## 🖌️ Usage
-
 1. Select a color and draw your math equation on the canvas
 2. Click the **Run** button to process the image
 3. See the LaTeX-rendered equation and result appear on screen
@@ -71,26 +66,46 @@ GOOGLE_API_KEY=your_gemini_api_key
 ---
 
 ## 📁 Project Structure
-
 ```
 /frontend     - React app with canvas, controls, and LaTeX display
-/backend      - FastAPI server with Gemini Flash logic
+/backend      - FastAPI server with Gemini 2.0 Flash logic
 ```
 
 ---
 
-## 📸 Example
+## 📸 Examples
 
-*Drawn input:*
+### Basic Arithmetic
+**Input (Handwritten):**
+![Basic equation example](image/1.png)
 
-![Example equation drawing]
+**Output (Processed with LaTeX):**
+![Basic equation result](image/2.png)
 
-*Processed output with LaTeX rendering and computed result*
+### Variable Assignment
+**Input (Handwritten):**
+![Complex equation example](image/3.png)
+
+**Output (Processed with LaTeX):**
+![Complex equation result](image/4.png)
+
+### Advanced Mathematics
+**Input (Handwritten):**
+![Variable assignment example](image/5.png)
+
+**Output (Processed with LaTeX):**
+![Variable assignment result](image/6.png)
+
+### Illustration Solving
+**Input (Handwritten):**
+![Advanced math example](image/7.png)
+
+**Output (Processed with LaTeX):**
+![Advanced math result](image/8.png)
 
 ---
 
 ## 🚀 Getting Started
-
 1. Clone the repository
 2. Set up the backend:
    ```bash
@@ -110,10 +125,7 @@ GOOGLE_API_KEY=your_gemini_api_key
 
 ---
 
-## 🤝 Contributing
+## 🔧 Model Configuration
+The application uses **Gemini 2.0 Flash** for enhanced performance and accuracy in handwritten equation recognition. Make sure your Google API key has access to the Gemini 2.0 Flash model.
 
-Feel free to submit issues and pull requests to improve MathCanvas!
-
-## 📄 License
-
-[Add your license here]
+---
