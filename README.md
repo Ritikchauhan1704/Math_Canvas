@@ -46,7 +46,7 @@ VITE_SERVER_URL=http://localhost:8000
 ```bash
 cd backend
 pip install -r requirements.txt
-uvicorn main:app --reload
+python -m uvicorn src.main:app --reload
 ```
 
 Create a `.env` file for the backend:

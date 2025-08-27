@@ -12,7 +12,7 @@ genai.configure(api_key=GEMINI_API_KEY)
 
 
 def analyze_image(img: Image, dict_of_vars: dict):
-    # Use the updated Gemini 2.0 model name
+    # print(GEMINI_API_KEY)
     model = genai.GenerativeModel(model_name="models/gemini-2.0-flash")
 
     dict_of_vars_str = json.dumps(dict_of_vars, ensure_ascii=False)
@@ -36,7 +36,8 @@ def analyze_image(img: Image, dict_of_vars: dict):
         f"Use escape characters properly like \\f → \\\\f, \\n → \\\\n. "
         f"If a variable in the expression is in this dictionary, use its value: {dict_of_vars_str}. "
         f"IMPORTANT: Return ONLY a valid Python list of dictionaries without any markdown formatting, code blocks, or backticks. "
-        f"Use single quotes for strings. Example format: [{'expr': '2+2', 'result': 4}]"
+       f"Use single quotes for strings. Example format: [{{'expr': '2+2', 'result': 4}}]"
+
     )
 
     try:
